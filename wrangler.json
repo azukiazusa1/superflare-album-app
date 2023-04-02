@@ -1,0 +1,26 @@
+{
+  "name": "my-superflare-app",
+  "compatibility_flags": ["nodejs_compat"],
+  "main": "worker.ts",
+  "define": {
+    "process.env.REMIX_DEV_SERVER_WS_PORT": "8002"
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "my-superflare-app-db",
+      "database_id": "399fda5a-f5a5-45f5-8263-9ebf8077c1be"
+    }
+  ],
+  "r2_buckets": [
+    {
+      "binding": "BUCKET",
+      "bucket_name": "my-superflare-app-bucket",
+      "preview_bucket_name": "BUCKET"
+    }
+  ],
+  "compatibility_date": "2023-04-02",
+  "site": {
+    "bucket": "./public"
+  }
+}
